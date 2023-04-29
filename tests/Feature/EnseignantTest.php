@@ -12,7 +12,7 @@ class EnseignantTest extends TestCase
     use RefreshDatabase;
 
     /** @test */
-    public function get_all_enseignant(): void
+    public function get_all_enseignant()
     {
         $enseignants = Enseignant::factory()->create();
 
