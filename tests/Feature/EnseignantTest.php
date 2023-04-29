@@ -12,8 +12,7 @@ class EnseignantTest extends TestCase
     use RefreshDatabase;
 
     /** @test */
-    public function get_all_enseignant()
-    {
+    public function test_get_all_enseignant(){
         $enseignants = Enseignant::factory()->create();
 
         $response = $this->getJson(route('enseignant.index'))->json();

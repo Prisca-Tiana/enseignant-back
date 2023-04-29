@@ -17,7 +17,10 @@ class EnseignantFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'matricule' => '12034410',
+            'nom_enseignant' => 'RAKOTOZAFY Rivo',
+            'taux_horaire' => 4200000,
+            'nb_heure' => 10,
         ];
     }
 }
